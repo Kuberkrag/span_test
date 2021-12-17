@@ -1,0 +1,30 @@
+{
+  "name": "span_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chromedriver": "^91.0.1",
+    "cucumber": "^6.0.5",
+    "cucumber-junit-convert": "^1.1.0",
+    "jsreport": "^3.1.1",
+    "selenium-cucumber-js": "^1.8.1",
+    "stimulsoft-reports-js": "^2022.1.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cucumber-html-reporter": "^5.5.0"
+  },
+  "scripts": {
+    "features": "cucumber-js Features/ -f json:./Report/Report.json",
+    "Open": "cucumber-js Features/Open.feature:5 -f json:./Report/Report.json",
+    "Test_Suit": "cucumber-js Features/Test_Suit.feature:25 -f json:./Report/Report.json",
+    "Check_API": "cucumber-js Features/Test_Suit.feature:43 -f json:./Report/Report.json",
+    "Check_API_Results": "cucumber-js Features/Test_Suit.feature:61 -f json:./Report/Report.json",
+    "Check_API_Games": "cucumber-js Features/Test_Suit.feature:76 -f json:./Report/Report.json",
+    "report": "node Report.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
